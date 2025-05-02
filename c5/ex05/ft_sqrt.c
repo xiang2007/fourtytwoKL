@@ -6,22 +6,26 @@
 /*   By: wshou-xi <wshou-xi@student.42kl.edu.m      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 12:57:17 by wshou-xi          #+#    #+#             */
-/*   Updated: 2025/03/19 09:27:01 by wshou-xi         ###   ########.fr       */
+/*   Updated: 2025/03/17 12:57:21 by wshou-xi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
 	int	count;
+	int	mult;
 
-	if (nb < 0)
-		return (0);
 	count = 1;
-	while (count <= nb / count)
+	mult = 0;
+	while (count < nb)
 	{
-		if (count * count == nb)
+		if (mult != nb)
+		{
+			count++;
+			mult = count * count;
+		}
+		if (mult == nb)
 			return (count);
-		count++;
 	}
 	return (0);
 }

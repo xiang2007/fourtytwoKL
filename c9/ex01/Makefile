@@ -6,7 +6,6 @@ RM = rm -f
 SRC = $(shell find srcs ~/c/c09/ex01/scrs -name "*.c")
 OBJ = $(SRC:.c=.o)
 NAME = libft.a
-all = $(NAME)
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
