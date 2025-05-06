@@ -1,0 +1,3 @@
+gcc -c add.c -o add.o (compile it to object file)
+ar rcs libadd.a add.o (make it a archive file)
+gcc main.c -L. -ladd -o main (compile and link it with a static library)
