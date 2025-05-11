@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra -fsanitize=undefined
 RM = rm -f
 
-NAME = test
+NAME = program
 SRC = $(shell find -name "*.c")
 
 $(NAME): $(SRC)

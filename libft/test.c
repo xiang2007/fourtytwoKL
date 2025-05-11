@@ -1,25 +1,25 @@
-#include "libft.h"
+/*#include <stdio.h>
+#include <string.h>
 
-int	main()
+// Declare your ft_bzero
+void	ft_bzero(void *str, size_t n);
+
+int	main(void)
 {
-	printf("%d\n",ft_isalpha('c'));
-	printf("%d\n",ft_isalpha('C'));
-	printf("%d\n",ft_isalpha('4'));
-	printf("%d\n",ft_isalpha('+'));
+	char str[10] = "123456789";
+
+	printf("Before bzero: %s\n", str);  // Should print "123456789"
+
+	ft_bzero(str, 5);  // Zero out the first 5 bytes
+
+	// Print hex values to see the zeroed bytes
+	printf("After bzero (hex): ");
+	for (int i = 0; i < 10; i++)
+		printf("%02x ", (unsigned char)str[i]);
 	printf("\n");
-	printf("%d\n",ft_isdigit('4'));
-	printf("%d\n",ft_isdigit('A'));
-	printf("%d\n",ft_isdigit('+'));
-	printf("\n");
-	printf("%d\n",ft_isallnum('4'));
-	printf("%d\n",ft_isallnum('A'));
-	printf("%d\n",ft_isallnum('+'));
-	printf("\n");
-	printf("%d\n",ft_isascii('A'));
-	printf("%d\n",ft_isascii('b'));
-	printf("%d\n",ft_isascii('+'));
-	printf("\n");
-	printf("%d\n",ft_strlen("HelloWorld"));
-	printf("%d\n",ft_strlen("file name missing."));
-	printf("\n");
-}
+
+	// Try to print as string (may stop early due to nulls)
+	printf("After bzero (as string): %s\n", str);
+
+	return 0;
+}*/
