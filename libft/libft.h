@@ -10,3 +10,4 @@ int	ft_isascii(int c);
 int	ft_strlen(char *str);
 void *ft_memset(void *str, int c, size_t n);
 void *ft_bzero(void *str, size_t n);
+char    *strchr(const char *str, int search_str);

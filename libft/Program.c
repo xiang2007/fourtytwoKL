@@ -31,4 +31,5 @@ int	main()
 	//ft_bzero(str, 5);
 	//printf("%s\n",str);
 	//printf("\n");
+	printf("%s")
 }
