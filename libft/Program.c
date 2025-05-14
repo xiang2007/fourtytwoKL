@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int	main()
+/*int	main()
 {
 	char str[100] = "HelloWorld";
 	printf("%d\n",ft_isalpha('c'));
@@ -31,4 +31,7 @@ int	main()
 	//ft_bzero(str, 5);
 	//printf("%s\n",str);
 	//printf("\n");
-}
+	printf("%c\n",ft_toupper('c'));
+	printf("%c\n",ft_toupper('A'));
+	printf("%c\n",ft_toupper('0'));
+}*/
