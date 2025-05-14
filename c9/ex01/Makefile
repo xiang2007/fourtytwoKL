@@ -3,7 +3,7 @@ CFLAGS = -Wall -Werror -Wextra -I./include
 AR = ar rcs
 RM = rm -f
 
-SRC = $(shell find srcs ~/c/c09/ex01/scrs -name "*.c")
+SRC = $(shell find -name "*.c")
 OBJ = $(SRC:.c=.o)
 NAME = libft.a
 

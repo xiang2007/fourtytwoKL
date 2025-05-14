@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -fsanitize=undefined
+CFLAGS = -Wall -Werror -Wextra -fsanitize=undefined -std=c99
 RM = rm -f
 
 NAME = program
