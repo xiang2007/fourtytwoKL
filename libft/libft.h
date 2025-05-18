@@ -16,3 +16,4 @@ char    *ft_strchr(const char *str, int search_str);
 int ft_atoi(const char *str);
 void *ft_memcpy (void *dest,const void *src, size_t num);
 void    *ft_memmove(void *to, const void *from, size_t numBytes);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);

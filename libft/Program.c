@@ -2,8 +2,7 @@
 #include <ctype.h>
 int	main()
 {
-	char str[100] = "HelloWorld";
-	char dest[100] = "ILikePizza";
+	//char str[12] = "HelloWorldss";
 	printf("%d\n",ft_isalpha('c'));
 	printf("%d\n",ft_isalpha('C'));
 	printf("%d\n",ft_isalpha('4'));
@@ -36,8 +35,12 @@ int	main()
 	//printf("%s\n",ft_strchr(str, 'l'));
 	printf("%d\n",atoi("--2A14748364A8"));
 	printf("%d\n",ft_atoi("--2A14748364A7"));
-	//ft_memcpy(dest,str,ft_strlen(str));
+	/*ft_memcpy(dest,str,ft_strlen(str));
 	printf("%s\n",dest);
 	ft_memmove(dest,str,ft_strlen(str));
-	printf("%s\n",dest);
+	printf("%s\n",dest);*/
+	char dst[1];
+	size_t len = ft_strlcpy(dst, "Overflow", sizeof(dst));
+	printf("%s\n",dst);
+	printf("%zu\n",len);
 }
