@@ -15,3 +15,4 @@ int	ft_tolower(int ch);
 char    *ft_strchr(const char *str, int search_str);
 int ft_atoi(const char *str);
 void *ft_memcpy (void *dest,const void *src, size_t num);
+void    *ft_memmove(void *to, const void *from, size_t numBytes);
