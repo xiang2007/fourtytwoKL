@@ -3,6 +3,7 @@
 int	main()
 {
 	char *str = "HelloWorld";
+	char dest[100];
 	printf("%d\n",ft_isalpha('c'));
 	printf("%d\n",ft_isalpha('C'));
 	printf("%d\n",ft_isalpha('4'));
@@ -35,4 +36,6 @@ int	main()
 	printf("%s\n",ft_strchr(str, 'l'));
 	printf("%d\n",atoi("--2A14748364A8"));
 	printf("%d\n",ft_atoi("--2A14748364A7"));
+	ft_memcpy(dest,str,ft_strlen(str) + 1);
+	printf("%s\n",dest);
 }

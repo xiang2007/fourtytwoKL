@@ -1,4 +1,4 @@
-#include "libft.h"
+/*#include "libft.h"
 #include <ctype.h>
 #include <stdio.h>
 
@@ -15,4 +15,4 @@ int main()
     }
 
     return 0;
-}
+}*/
