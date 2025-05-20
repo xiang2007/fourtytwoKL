@@ -1,16 +1,33 @@
-#include "libft.h"
 #include <stddef.h>
+#include <stdio.h>
+
+int ft_count(char *c);
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	if (src = NULL)
-		return size;
-	dest[size - 1] = '\0';
-	size--;
-	while (size - 1)
+	size_t i;
+	size_t s;
+
+	i = 0;
+	s = ft_count((char *)src);
+	if (size == 0)
+		return (s);
+	while (src[i] && i < size - 1)
 	{
-		dest[size - 1] = (char *)src[size - 1];
-		size--;
+		dest[i] = src[i];
+		i++;
 	}
-	if ()
+	dest[i] = '\0';	
+
+	return (s);
+}
+
+int ft_count(char *c)
+{
+	int	i;
+
+	i = 0;
+	while (c[i])
+		i++;
+	return (i);
 }
