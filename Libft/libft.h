@@ -25,6 +25,7 @@ int	ft_strlen(char *str);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *find, const char *to_find, size_t len);
 char	*strrchr(const char *s, int c);
+char    *ft_strtrim(const char *s1, const char set);
 int	ft_toupper(int ch);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
