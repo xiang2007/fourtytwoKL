@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-void    ft_count(const char *str, const char c, int *min, int *max);
-
 char    *ft_strtrim(const char *s1, const char set)
 {
 	size_t    i;
@@ -43,16 +41,3 @@ void    ft_count(const char *str, const char c, int *min, int *max)
 	}
 }
 
-#include <stdio.h>
-int    main()
-{
-	int    min;
-	int    max;
-	char    *dest;
-
-	min = 0;
-	max = 0;
-	const char    str[20] = "   Hello World   ";
-	dest = ft_strtrim(str,' ');
-	printf("%s\n",dest);
-}
