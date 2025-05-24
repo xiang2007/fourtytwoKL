@@ -1,3 +1,6 @@
+<<<<<<< HEAD:libft/srcs/ft_strlcpy.c
+size_t strlcpy(char *dst, const char *src, size_t dstsize);
+=======
 #include <stddef.h>
 #include <stdio.h>
 
@@ -31,3 +34,4 @@ int ft_count(char *c)
 		i++;
 	return (i);
 }
+>>>>>>> 1e81dbcb3d717a019a609a006ef65a2027849e0f:Libft/ft_strlcpy.c
