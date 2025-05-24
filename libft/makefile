@@ -1,28 +1,23 @@
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -fsanitize=undefined -std=c99
+CFLAGS = -Wall -Werror -Wextra
+FSAN = -fsanitize=undefined
 RM = rm -f
 
 NAME = program
 TEST = test.c
-TESTFILE = test
-SRC = $(shell find srcs -name "*.c")
-MAIN = Program.c
+SRC = $(shell find -name "*.c")
 
 $(NAME): $(SRC)
-	$(CC) $(CFLAGS) $(MAIN) $(SRC) -o $(NAME)
+	$(CC) $(CFLAGS) $(FSAN) $(SRC) -o $(NAME)
 
-.PHONY: all clean fclean re
+.PHONY: clean fclean all re
 
 clean:
 	$(RM) $(NAME)
 
 fclean: clean
-	$(RM) $(TESTFILE)
 
 all:
-	$(CC) $(CFLAGS) $(MAIN) $(SRC) -o $(NAME)
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
 re: fclean all
-
-test:
-	$(CC) $(CFLAGS) $(TEST) -o test
