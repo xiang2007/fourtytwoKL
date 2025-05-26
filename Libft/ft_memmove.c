@@ -1,19 +1,25 @@
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t num)
 {
 	size_t i;
-	unsigned char *d;
-	const unsigned char *s;
+	char *d;
+	const char *s;
+	const char *d;
 
-	i = 0;
-	d = (unsigned char *)dest;
-	s = (const unsigned char *)src;
-	while (i < num)
+	i = ft_strlen(src);
+	while (s[i] && d[i] && i < num)
 	{
-		d[i] = s[i];
+		*(tmp + (char)i) = s[i];
 		i++;
 	}
+	i = 0;
+}
 
-	return dest;
+#include <stdio.h>
+int	main()
+{
+	char src[10] = "HelloWorld";
+	size_t num = 5;
+	printf("%p\n",ft_memmove(src,&src[2],num));
 }
